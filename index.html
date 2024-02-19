@@ -146,7 +146,7 @@
                         </div>
                         <!-- Coupon -->
                         <div class="p-5">
-                            <h4 class="text-base font-bold">NEW15</h4>
+                            <h4 id="NEW15" class="text-base font-bold">NEW15</h4>
                             <p>Coupon Code</p>
 
                         </div>
@@ -391,7 +391,7 @@
                                     <table class="table-auto">
                                         <thead>
                                             <tr class="text-black ">
-                                                <th>Seat</th>
+                                                <th>Seats<sub id="totalSelected"></sub></th>
                                                 <th>Class</th>
                                                 <th>Price</th>
                                             </tr>
@@ -419,12 +419,12 @@
                                                 <!-- <td class="bg-white"><input class="bg-white"></td> -->
                                                 <td class="bg-white text-right"><button
                                                         class="bg-green-400 py-1 px-4 text-white rounded-lg "
-                                                        type="button"> Apply</button></td>
+                                                        type="button" onclick="applyPromoCode()" > Apply</button></td>
                                             </tr>
                                             <tr class="text-black font-bold">
                                                 <td>Grand Total</td>
                                                 <td></td>
-                                                <td>BTD 1100</td>
+                                                <td>BTD <span id="grand-total">00</span></td>
                                             </tr>
 
 
