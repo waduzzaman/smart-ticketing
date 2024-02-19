@@ -447,18 +447,20 @@
                                         <button class="bg-green-500 py-1 px-4 text-white rounded-lg w-full" type="submit">Next</button>
                                     </form>
                                     
-                                    <div id="modalContainer" class="hidden">
+                                    <div id="modalContainer" class="hidden bg-white">
                                         <!-- The button to open modal -->
                                         <label for="my_modal_6" class="btn">Open modal</label>
                                     
                                         
                                         <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-                                        <div class="modal" role="dialog">
+                                        <div class="modal bg-slate-50" role="dialog">
                                             <div class="modal-box">
-                                                <h3 class="font-bold text-lg">Hello!</h3>
-                                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                                <h3 class="font-bold text-lg">Success</h3>
+                                                <p class="py-4 uppercase">Thank You for Booking our Bus Seats <br> We are Working hard to find the best service adn deals for you</p>
+                                                <p class="py-4 uppercase">Shortly you will find confirmation in your email</p>
+                                                
                                                 <div class="modal-action">
-                                                    <label for="my_modal_6" class="btn" onclick="hideElementById('modalContainer')">Close!</label>
+                                                    <label class="bg-green-500" for="my_modal_6" class="btn" onclick="hideElementById('modalContainer')">Continue</label>
                                                 </div>
                                             </div>
                                         </div>
