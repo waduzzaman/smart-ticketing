@@ -165,7 +165,7 @@
                             <img class="h-28" src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="p-5">
-                            <h4 class="text-lg font-bold">Couple20</h4>
+                            <h4 id="couple20" class="text-lg font-bold">Couple20</h4>
                             <p>Coupon Code </p>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                                         </div>
                                     </div>
                                     <div class="flex bg-green-200 py-1 px-3 gap-2 rounded-lg">
-                                        <div><img src="images/seat bg-gray-200 p-1 m-2-green.png" alt="Green Line Icon">
+                                        <div><img src="images/seat-green-filled.png" alt="Green Line Icon">
                                         </div>
                                         <div>
                                             <p>40</p>
@@ -435,39 +435,35 @@
                                 </div>
                                 <div>
 
-                                    <form class="text-start py-5">
+                                 
+
+                                    <form class="text-start py-5" onsubmit="showModal(event)">
                                         <label class="text-start text-black" for="fname">Passenger Name *</label><br>
-                                        <input class="bg-white p-2" type="text" id="name" name="fname"
-                                            placeholder="Enter Your name"><br>
+                                        <input class="bg-white p-2" type="text" id="name" name="fname" placeholder="Enter Your name"><br>
                                         <label class="text-black" for="lname">Passenger Phone</label><br>
-                                        <input class="bg-white p-2" type="text" id="phone" name="lname"
-                                            placeholder="Enter Your Phone"><br>
+                                        <input class="bg-white p-2" type="text" id="phone" name="lname" placeholder="Enter Your Phone"><br>
                                         <label class="text-black" for="lname">Email Address</label><br>
-                                        <input class="bg-white p-2" type="text" id="email"
-                                            placeholder="Enter Your Email ID"><br><br>
-                                        <button
-                                            class="bg-green-500 py-1 px-4 text-white rounded-lg w-full">Next</button>
-
-
+                                        <input class="bg-white p-2" type="text" id="email" placeholder="Enter Your Email ID"><br><br>
+                                        <button class="bg-green-500 py-1 px-4 text-white rounded-lg w-full" type="submit">Next</button>
                                     </form>
-                                    <!-- Modal for confirmation -->
-
-                                    <div class="hidden">
+                                    
+                                    <div id="modalContainer" class="hidden">
                                         <!-- The button to open modal -->
-                                        <label for="my_modal_6" class="btn">open modal</label>
-
-                                        <!-- Put this part before </body> tag -->
+                                        <label for="my_modal_6" class="btn">Open modal</label>
+                                    
+                                        
                                         <input type="checkbox" id="my_modal_6" class="modal-toggle" />
                                         <div class="modal" role="dialog">
                                             <div class="modal-box">
                                                 <h3 class="font-bold text-lg">Hello!</h3>
                                                 <p class="py-4">This modal works with a hidden checkbox!</p>
                                                 <div class="modal-action">
-                                                    <label for="my_modal_6" class="btn">Close!</label>
+                                                    <label for="my_modal_6" class="btn" onclick="hideElementById('modalContainer')">Close!</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
 
                                     <div class="flex gap-2 underline">
                                         <a href="#">Terms and Condition</a>
